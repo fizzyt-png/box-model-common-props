@@ -338,6 +338,7 @@ footer{
 /* For the first link in this section: */
 #section2 a:first-of-type {
     display: block;
+    text-decoration: none;
     text-align: center;
     background-color: var(--lt-blue);
     color: var(--dk-gray);
