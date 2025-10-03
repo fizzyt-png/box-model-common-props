@@ -264,7 +264,7 @@ p code, li code{
 }
 
 #section4 li::before{
-    content: 
+    content:"" 
 }
 
 #section5 p:last-of-type{
@@ -475,6 +475,16 @@ footer{
         - move this to the right from its original location by 25px
 */
 #section3 div::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    right: -25px;
 }
 
 
@@ -496,6 +506,7 @@ footer{
             - left: 0
 */
 #section4 p:last-of-type{
+    margin: 1rem 0 1rem 0;
 
 }
 
@@ -533,6 +544,8 @@ footer{
         - add the puppy-photo as a repeating background to the container
 */
 #bg-img-3{
+    background-color: var(--lt-blue);
+    background: center url("images/puppy-photo.jpg") repeat;
     
 }
 
@@ -560,6 +573,10 @@ footer{
         - add the wood background texture from the images folder
 */
 #pattern1{
+    background-color: var(--light-gray);
+    width: 110%;
+    height: auto;
+    background-image: url("images/wood.png");
     
 }
 
@@ -617,7 +634,7 @@ footer{
         - float the image to the right
 */
 #dog-house{
-    
+    float: right;
 }
 
 /* When you use floats, you have to be sure to clear them so that the rest of your page after the floats displays normally. Let's use the display section to clear the floats (because it is the next tag outside of our container in the HTML) */
@@ -626,6 +643,7 @@ footer{
         - clear any floats
 */
 #section9{
+    clear: both;
     
 }
 
